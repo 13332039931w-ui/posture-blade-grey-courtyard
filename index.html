@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10181d">
+  <meta name="description" content="化身狼，在灰庭迎战尾名荣一郎。免费浏览器动作试玩：把握弹反时机，击破架势，完成忍杀。">
+  <title>架势之刃 · 灰庭试炼</title>
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="架势之刃首页"><span class="seal">刃</span><span>架势之刃<small>灰庭试炼 · 浏览器试玩</small></span></a>
+    <div class="top-actions"><span class="status"><i></i> 键盘游玩</span><button class="quiet" id="fullscreen" type="button">全屏游玩 <span>↗</span></button></div>
+  </header>
+  <main>
+    <section class="stage" id="stage" aria-label="游戏画面">
+      <canvas id="canvas" width="1280" height="900" tabindex="0" aria-label="架势之刃游戏，使用 A D 移动，J 攻击，K 弹反，E 忍杀">请使用支持 WebGL 2 的浏览器。</canvas>
+      <div class="cover" id="cover">
+        <div class="cover-content">
+          <p class="eyebrow">一柄刀 · 一场试炼</p>
+          <h1>迎击落下的刀锋</h1>
+          <p class="lede">你是<span>狼</span>。穿过守卫把守的灰庭，<br>迎战<span>尾名荣一郎</span>。</p>
+          <p class="guide">看清起手，在刀锋落下时弹反。<br>击破架势，接近敌人，完成忍杀。</p>
+          <button class="start" id="start" type="button">进入灰庭 <span>→</span></button>
+          <div class="load-panel" id="load-panel" hidden><progress id="progress" max="100" value="0" aria-label="游戏加载进度"></progress><p id="load-status" role="status" aria-live="polite">准备加载…</p></div>
+          <p class="note" id="note">无需安装 · 首次加载约 9 MB · 点击开始启用声音</p>
+          <p class="error" id="error" role="alert" hidden></p>
+          <button class="quiet" id="retry" type="button" hidden>重新加载</button>
+        </div>
+        <span class="edition">2.5D 动作 · 垂直切片</span>
+      </div>
+    </section>
+    <section class="under-stage" aria-label="操作说明">
+      <div class="controls"><span><kbd>A</kbd><kbd>D</kbd> 移动</span><span><kbd>Space</kbd> 跳跃</span><span><kbd>J</kbd> 轻斩</span><span class="key-action"><kbd>K</kbd> 防御 / 弹反</span><span><kbd>E</kbd> 忍杀</span><span><kbd>R</kbd> 重来</span><span><kbd>P</kbd> 暂停</span></div>
+      <p class="tip">长按 K 是格挡，会积累自身架势；刀将命中时按 K 才是弹反。敌人出现红色破防提示后，接近并按 E。</p>
+      <p class="mobile-note">当前版本需要实体键盘，请使用电脑浏览器游玩。</p>
+    </section>
+  </main>
+  <footer><span>灰盒试玩 · 占位美术 · 击败守卫与 BOSS 即可通关</span><a href="licenses.html">引擎与字体许可</a></footer>
+  <noscript><p class="noscript">游戏需要启用 JavaScript。</p></noscript>
+  <script src="game.js"></script>
+  <script src="game-config.js"></script>
+  <script src="loader.js"></script>
+</body>
+</html>

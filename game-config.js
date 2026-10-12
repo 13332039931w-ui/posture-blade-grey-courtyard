@@ -1,0 +1,1 @@
+window.GAME_CONFIG = {"args": [], "canvasResizePolicy": 2, "ensureCrossOriginIsolationHeaders": false, "executable": "game", "experimentalVK": false, "fileSizes": {"game.pck": 449056, "game.wasm": 35376909}, "focusCanvas": true, "gdextensionLibs": [], "persistentPaths": []};
